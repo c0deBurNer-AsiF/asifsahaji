@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AS</title>
+    <link rel="icon" href="icons8-github-96.png" sizes="68x68" type="image/x-icon">
     <link rel="stylesheet" href="portfolio.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,8 +116,8 @@
                 <div id="about_text">Hi! I'm <span>Asif Ali Sahaji</span>, a Civil Engineering student at Aliah University with a passion for technology. I specialize in frontend development with skills in HTML, CSS, JavaScript, and React, and for backend development, I work with Django. In addition, I have experience in C and Python and a beginner's knowledge of data analysis using Pandas, NumPy, Matplotlib, and Seaborn. While my academic background is in civil engineering, I'm excited about combining problem-solving with coding and constantly expanding my tech expertise.</div>
 
                 <div id="abt_btn">
-                    <div><a href="resume.pdf" download="resume"><button id="abt_btn1">Download Resume <i class="fa-solid fa-download"></i></button></a></div>
-                    <div><a href="resume.pdf" target="_blank"><button id="abt_btn2">View Resume <i class='fas fa-eye'></i></button></a></div>
+                    <div id="abt_btn1_div"><a href="resume.pdf" download="resume"><button id="abt_btn1">Download Resume <i class="fa-solid fa-download"></i></button></a></div>
+                    <div id="abt_btn2_div"><a href="resume.pdf" target="_blank"><button id="abt_btn2">View Resume <i class='fas fa-eye'></i></button></a></div>
                 </div>
 
                 <div class="aboutImg2"><img src="aboutsectionImg2.svg" alt=""></div>
@@ -245,8 +246,8 @@
 
             <div id="workSide">
                     <div id="workSection">
-                        <span class="nameOfCourse" id="workCourseName">Python Peoject Solver</span>
-                        <span class="nameClg" id="workClgName">CodeSoft</span>
+                        <span class="nameOfCourse" id="workCourseName">Python Project Solver</span>
+                        <span class="nameClg" id="workClgName">CodSoft</span>
                         <span class="year" id="workYear">2024</span>
                     </div>
                     <div class="workVerticalLine"></div>
@@ -259,19 +260,6 @@
         <div class="heading_">My Projects</div>
 
         <div class="projects" id="forMargin5">
-            <div class="project">
-                <img src="E-commerce Website.png" alt="E-commerce image" class="projectImg">
-                <div class="name">E-Commerce Website</div>
-                <p>
-                    <span class="about">A full-fledged e-commerce website where users can browse products, add them to a shopping cart, and proceed to checkout. The site includes features like user authentication, product categories, and a payment gateway integration.</span><a href="">See More</a>
-                </p>
-                <!--<span class="see-more">See More</soan>-->
-                
-                <div class="btn">
-                    <button class="btn1"><i class="fa-solid fa-link symbol"></i>Link</button>
-                    <button class="btn2"><i class="fa-brands fa-github symbol"></i>GitHub</button>
-                </div>
-            </div>
 
             <div class="project">
                 <img src="Unit Converter.png" alt="Unit Converter image" class="projectImg">
@@ -282,8 +270,22 @@
                 
 
                 <div class="btn">
-                    <button class="btn1"><i class="fa-solid fa-link symbol"></i>Link</button>
-                    <button class="btn2"><i class="fa-brands fa-github symbol"></i>GitHub</button>
+                    <a href="https://c0deburner-asif.github.io/unit-converter/" target="_blank"><button class="btn1"><i class="fa-solid fa-link symbol"></i>Link</button></a>
+                    <a href="https://github.com/c0deBurNer-AsiF/unit-converter" target="_blank"><button class="btn2"><i class="fa-brands fa-github symbol"></i>GitHub</button></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="E-commerce Website.png" alt="E-commerce image" class="projectImg">
+                <div class="name">E-Commerce Website</div>
+                <p>
+                    <span class="about">A full-fledged e-commerce website where users can browse products, add them to a shopping cart, and proceed to checkout. The site includes features like user authentication, product categories, and a payment gateway integration.</span><a href="">See More</a>
+                </p>
+                <!--<span class="see-more">See More</soan>-->
+                
+                <div class="btn">
+                    <a href="" target="_blank"><button class="btn1"><i class="fa-solid fa-link symbol"></i>Link</button></a>
+                    <a href="https://github.com/c0deBurNer-AsiF/E-commerce-webpage" target="_blank"><button class="btn2"><i class="fa-brands fa-github symbol"></i>GitHub</button></a>
                 </div>
             </div>
 
@@ -295,8 +297,8 @@
                 </p>
                 
                 <div class="btn">
-                    <button class="btn1"><i class="fa-solid fa-link symbol"></i>Link</button>
-                    <button class="btn2"><i class="fa-brands fa-github symbol"></i>GitHub</button>
+                    <a href="" target="_blank"><button class="btn1"><i class="fa-solid fa-link symbol"></i>Link</button></a>
+                    <a href="https://github.com/c0deBurNer-AsiF/Registration-form" target="_blank"><button class="btn2"><i class="fa-brands fa-github symbol"></i>GitHub</button></a>
                 </div>
             </div>
         </div>
@@ -308,6 +310,7 @@
     -->
         <div class="heading">Contact Me</div>
         <div class="heading_">Get In Touch</div>
+        <!--<img src="contact_background.svg" alt="">-->
 
         <div class="sections" id="forMargin6">
             <div class="leftForSix">
@@ -380,16 +383,16 @@
 
             <div class="secondColumn">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Skills</a></li>
+                    <li><a href="#noOne">Home</a></li>
+                    <li><a href="#noTwo">About</a></li>
+                    <li><a href="#noThree">Skills</a></li>
                     
                 </ul>
 
                 <ul>
-                    <li><a href="">Qualification</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#noFour">Qualification</a></li>
+                    <li><a href="#noFive">Projects</a></li>
+                    <li><a href="#noSix">Contact</a></li>
                 </ul>
             </div>
 

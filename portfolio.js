@@ -19,6 +19,9 @@ allTitle.forEach(item=>{
     });   
 });
 
+
+
+
 const eduTab=document.getElementById("education");
 const workTab=document.getElementById("work");
 const eduSection=document.getElementById("eduSection");
@@ -64,6 +67,9 @@ workTab.addEventListener("click",()=>{
 
 var sections=document.querySelectorAll("section");
 var links=document.querySelectorAll("nav ul li a");
+var secs=document.querySelectorAll("section");
+var lnks=document.querySelectorAll("#mobileNavList li a");
+
 window.onscroll= () =>{
     sections.forEach((sec)=>{
         var top=window.scrollY;
@@ -87,7 +93,31 @@ window.onscroll= () =>{
         };
         
     });
+
+    secs.forEach((sec)=>{
+        var t=window.scrollY;
+        var o;
+        if (sec.getAttribute("id")=='noTwo')
+        {
+            o=sec.offsetTop-160;
+        }
+        else
+        {
+            o=sec.offsetTop-85;
+        }
+
+        var h=sec.offsetHeight;
+        var i=sec.getAttribute("id");
+        if (t>=o && o+h)
+        {
+            lnks.forEach(l=>{
+                l.classList.remove("active");
+                document.querySelector('#mobileNavList li a[href*="'+i+'"]').classList.add("active");
+            })
+        }
+    })
 };
+
 
 
 var navBtn = document.getElementById("navBtnId");
@@ -96,6 +126,30 @@ var mobileNav = document.querySelector(".mobileNav");
 navBtn.addEventListener("click", () => {
     mobileNav.classList.toggle("active");
 });
+
+
+
+document.getElementById("btn2").addEventListener("click", function() {
+    var aboutSection = document.getElementById("noTwo");
+    var sectionPosition = aboutSection.offsetTop;
+
+    window.scrollTo({
+        top: sectionPosition-140,
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("btn1").addEventListener("click", function(){
+    var contactSection=document.getElementById("noSix");
+    var sectionPosition=contactSection.offsetTop;
+
+    window.scrollTo({
+        top:sectionPosition-80,
+        behavior:"smooth"
+    });
+});
+
+
 
 
 

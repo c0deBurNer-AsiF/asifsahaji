@@ -12,9 +12,18 @@ html{
    
    
 }
+:root{
+    color-scheme: light;
+}
 img {
     max-width: 100%;
     height: auto;
+}
+#mobileNavSocial a{
+    color:#261d50;
+}
+#mobileNavSocial a:hover{
+    color:#4e3e79;
 }
 .mobileNav{
     display:none;
@@ -810,12 +819,12 @@ section #left{
 #workClgName{
     font-family:"poppins";
     position:relative;
-    right:57px;
+    right:63px;
 }
 #workYear{
     font-family:"poppins";
     position:relative;
-    right:72px;
+    right:74px;
 }
 .tab:hover{
     color:#f97008;
@@ -1761,6 +1770,9 @@ section #left{
         
         
     }
+    #abt_btn1_div{
+        margin-bottom:8px;
+    }
     
 
 
@@ -1812,7 +1824,7 @@ section #left{
         font-size: 14px;
     }
     #workClgName {
-        right: 50px;
+        right: 53px;
     }
     #workYear {
         right: 63px;
@@ -2158,6 +2170,9 @@ section #left{
         
         
     }
+    #abt_btn1_div{
+        margin-bottom:8px;
+    }
     
 
 
@@ -2219,10 +2234,10 @@ section #left{
         font-size: 14px;
     }
     #workClgName {
-        right: 18px;
+        right: 22px;
     }
     #workYear {
-        right: 31px;
+        right: 32px;
     }
 
     .workVerticalLine {
@@ -2569,6 +2584,9 @@ section #left{
         font-size: 15px;
         
         
+    }
+    #abt_btn1_div{
+        margin-bottom:8px;
     }
     
 
@@ -2985,6 +3003,9 @@ section #left{
         
     }
     
+    #abt_btn1_div{
+        margin-bottom:8px;
+    }
 
 
     .third .accor .bar .skills_heading1 {
@@ -3058,7 +3079,7 @@ section #left{
         font-size: 16px;
     }
     #workClgName {
-        right: 16px;
+        right: 19px;
     }
     #workYear {
         right: 30px;
@@ -3298,13 +3319,13 @@ section #left{
     }
     #btn1 {
         
-        padding: .5rem .25rem;
+        padding: .7rem .25rem;
         width: 100%;
         
     }
     #btn2{
         
-        padding: .5rem 0;
+        padding: .7rem 0;
         width: 100%;
         
     }
@@ -3319,7 +3340,7 @@ section #left{
     }
 
     .second {
-        padding-top:40px;
+        padding-top:0px;
     }
     .second .heading {
         font-size: 27px;
@@ -3437,6 +3458,10 @@ section #left{
         
         
     }
+
+    #abt_btn1_div{
+        margin-bottom:8px;
+    }
     
 
 
@@ -3510,7 +3535,7 @@ section #left{
         font-size: 16px;
     }
     #workClgName {
-        right: 16px;
+        right: 20px;
     }
     #workYear {
         right: 30px;
