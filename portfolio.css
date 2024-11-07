@@ -2101,6 +2101,18 @@ section #left{
     .six .heading_{
         font-size:12px;
     }
+    .firstRow {
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+    }
+    .item {
+        border: 1px solid rgba(234, 234, 252, 255);
+        background: rgba(234, 234, 252, 255);
+        width: auto;
+        border-radius: 7px;
+        padding: 10px;
+    }
     .seven .heading {
         font-size: 27px;
         
@@ -2515,6 +2527,18 @@ section #left{
     }
     .six .heading_{
         font-size:12px;
+    }
+    .firstRow {
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+    }
+    .item {
+        border: 1px solid rgba(234, 234, 252, 255);
+        background: rgba(234, 234, 252, 255);
+        width: auto;
+        border-radius: 7px;
+        padding: 10px;
     }
     .seven .heading {
         font-size: 27px;
@@ -2933,6 +2957,18 @@ section #left{
     .six .heading_{
         font-size:12px;
     }
+    .firstRow {
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+    }
+    .item {
+        border: 1px solid rgba(234, 234, 252, 255);
+        background: rgba(234, 234, 252, 255);
+        width: auto;
+        border-radius: 7px;
+        padding: 10px;
+    }
     .seven .heading {
         font-size: 27px;
         
@@ -3061,6 +3097,14 @@ section #left{
         position: relative;
         top: 236px;
     }
+    .vertical-line::before {
+        content: "●";
+        font-size: 30px;
+        position: relative;
+        right: 8px;
+        bottom: 20px;
+        color: #2e2250;
+    }
     #dot {
         bottom: 556px;
     }
@@ -3088,6 +3132,15 @@ section #left{
     .workVerticalLine {
         bottom: 109px;
     }
+    .workVerticalLine::before {
+        content: "●";
+        font-size: 30px;
+        position: relative;
+        right: 8px;
+        bottom: 20px;
+        color: #2e2250;
+    }
+
     .four {
         padding: 80px 0 20px 0;
         height: 570px;
@@ -3156,9 +3209,25 @@ section #left{
     #right,#social{
         display:none;
     }
+
+    .workVerticalLine::before {
+        content: "●";
+        font-size: 30px;
+        position: relative;
+        right: 8px;
+        bottom: 20px;
+        color: #2e2250;
+    }
+
+    .vertical-line::before {
+        content: "●";
+        font-size: 30px;
+        position: relative;
+        right: 8px;
+        bottom: 20px;
+        color: #2e2250;
+    }
    
-
-
     .navBtn{
         display:block;
         
@@ -3388,6 +3457,18 @@ section #left{
     }
     .six .heading_{
         font-size:12px;
+    }
+    .firstRow {
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+    }
+    .item {
+        border: 1px solid rgba(234, 234, 252, 255);
+        background: rgba(234, 234, 252, 255);
+        width: auto;
+        border-radius: 7px;
+        padding: 10px;
     }
     .seven .heading {
         font-size: 27px;
