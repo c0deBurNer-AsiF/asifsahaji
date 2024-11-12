@@ -958,7 +958,7 @@ section #left{
 }
 
 /*-------six heading------*/
-/*
+
 .six{
     background-color:rgb(252, 253, 249);
     padding-bottom:90px;
@@ -967,11 +967,15 @@ section #left{
     position:relative;
     overflow: hidden;
     
-   
+   /* background-image: url("contact_background.png");
+    background-size: cover;;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-attachment: local;*/
 }
-.wave-background {
+.wave{
     position: absolute;
-    top: -745px;
+    top: -710px;
     left: 0;
     right: 0;
     bottom:0;
@@ -981,31 +985,8 @@ section #left{
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: -1; /* Place behind content */
 }
-*/
-
-
-
-.six {
-    background-color: rgb(252, 253, 249);
-    padding-bottom: 90px;
-    width: 100%;
-    position: relative;
-    overflow: hidden; /* Prevents any overflow issues */
-    height: auto; /* Adjusts to content height */
-}
-
-.wave {
-    position: absolute;
-    bottom: -22vw;
-    left: 0;
-    width: 100%; /* Makes the SVG take full width */
-    height: auto; /* Keeps the aspect ratio */
-    z-index: -1; /* Positions the wave behind other content */
-}
-
-
 
 
 
@@ -1308,7 +1289,10 @@ section #left{
     #btn1,#btn2{
         font-size:17px;
     } 
-    
+    .wave{
+        position: absolute;
+        top: -1345px; 
+    }
 }
  
 @media screen and (min-width:1750px) and (max-width:2099px) {
@@ -1330,7 +1314,7 @@ section #left{
     #btn1,#btn2{
         font-size:15px;
     } 
-    
+   
 }
     
 
@@ -1359,7 +1343,11 @@ section #left{
         top:10px;
         left:15px;
     }
-    
+    .wave{
+        position: absolute;
+        top: -600px;
+    }
+
     #about_text{
         font-size:12px;
         top:10px;
@@ -1389,6 +1377,7 @@ section #left{
         font-size:26px;
         
     }
+    
     #type{
         font-weight:600;
     }
@@ -1410,9 +1399,9 @@ section #left{
         left:15px;
     }
     .wave{
-        bottom:-17vw;
+        position: absolute;
+        top: -520px;
     }
-    
 
     #btn2 img{
         width:20%;
@@ -1472,7 +1461,8 @@ section #left{
         left:15px;
     }
     .wave{
-        bottom:-10vw;
+        position: absolute;
+        top: -445px;
     }
 
     #btn2 img{
@@ -1534,9 +1524,9 @@ section #left{
         
     }
     .wave{
-        bottom:60vw;
+        position: absolute;
+        top: -445px;
     }
-    
     #right,#social{
         display:none;
     }
@@ -1936,9 +1926,6 @@ section #left{
     }
     #right,#social{
         display:none;
-    }
-    .wave{
-        bottom: 85vw;
     }
    
 
@@ -2368,9 +2355,6 @@ section #left{
     #right,#social{
         display:none;
     }
-    .wave{
-        bottom: 99vw;
-    }
    
 
 
@@ -2794,9 +2778,6 @@ section #left{
         display:flex;
         justify-content: space-between;
         
-    }
-    .wave{
-        bottom:123vw;
     }
     #right,#social{
         display:none;
@@ -3283,9 +3264,6 @@ section #left{
         display:flex;
         justify-content: space-between;
         
-    }
-    .wave{
-        bottom: 152vw;
     }
     #right,#social{
         display:none;
