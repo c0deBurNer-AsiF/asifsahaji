@@ -958,20 +958,61 @@ section #left{
 }
 
 /*-------six heading------*/
-
+/*
 .six{
     background-color:rgb(252, 253, 249);
     padding-bottom:90px;
     width:100%;
     height:670px;
     position:relative;
+    overflow: hidden;
     
-    background-image: url("contact_background.png");
-    background-size: cover;;
-    background-position:center ;
-    background-repeat: no-repeat;
-    background-attachment: local;
+   
 }
+.wave-background {
+    position: absolute;
+    top: -745px;
+    left: 0;
+    right: 0;
+    bottom:0;
+    width:100vw;
+    height:auto;
+    background-image: url("contact_background.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+*/
+
+
+
+.six {
+    background-color: rgb(252, 253, 249);
+    padding-bottom: 90px;
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Prevents any overflow issues */
+    height: auto; /* Adjusts to content height */
+}
+
+.wave {
+    position: absolute;
+    bottom: -22vw;
+    left: 0;
+    width: 100%; /* Makes the SVG take full width */
+    height: auto; /* Keeps the aspect ratio */
+    z-index: -1; /* Positions the wave behind other content */
+}
+
+
+
+
+
+
+
+
+
 
 /*
 .contactBgI img{
@@ -1013,14 +1054,22 @@ section #left{
     padding:0 0 70px 0;
     
 }
+
 .sections{
     padding: 0px 20px;
     display: flex;
     gap: 50px;
     justify-content: center;
+
+    
     
     
 }
+
+
+
+
+    
 .icon{
     font-size:25px;
     width:20px;
@@ -1258,7 +1307,8 @@ section #left{
     }
     #btn1,#btn2{
         font-size:17px;
-    }  
+    } 
+    
 }
  
 @media screen and (min-width:1750px) and (max-width:2099px) {
@@ -1280,6 +1330,7 @@ section #left{
     #btn1,#btn2{
         font-size:15px;
     } 
+    
 }
     
 
@@ -1302,12 +1353,13 @@ section #left{
         padding:13px 8px;
     }    
 }
+
 @media screen and (min-width:1000px) and (max-width:1290px){
     .aboutImg1{
         top:10px;
         left:15px;
     }
-
+    
     #about_text{
         font-size:12px;
         top:10px;
@@ -1351,12 +1403,16 @@ section #left{
     }    
 }
 
-@media screen and (min-width:900px) and (max-width:999px) {
+@media screen and (min-width:900px) and (max-width:1000px) {
 
     .aboutImg1{
         top:10px;
         left:15px;
     }
+    .wave{
+        bottom:-17vw;
+    }
+    
 
     #btn2 img{
         width:20%;
@@ -1409,11 +1465,14 @@ section #left{
 }
 
 
-@media screen and (min-width:750px) and (max-width:899px) {
+@media screen and (min-width:750px) and (max-width:900px) {
 
     .aboutImg1{
         top:10px;
         left:15px;
+    }
+    .wave{
+        bottom:-10vw;
     }
 
     #btn2 img{
@@ -1474,6 +1533,10 @@ section #left{
         justify-content: space-between;
         
     }
+    .wave{
+        bottom:60vw;
+    }
+    
     #right,#social{
         display:none;
     }
@@ -1692,6 +1755,7 @@ section #left{
     .five .heading_{
         font-size:12px;
     }
+        
     .six .heading {
         font-size: 27px;
         
@@ -1836,6 +1900,8 @@ section #left{
 
     .six {
         height: 950px;
+        position:relative;
+        
     }
 
     .sections {
@@ -1870,6 +1936,9 @@ section #left{
     }
     #right,#social{
         display:none;
+    }
+    .wave{
+        bottom: 85vw;
     }
    
 
@@ -2094,6 +2163,7 @@ section #left{
     .five .heading_{
         font-size:12px;
     }
+        
     .six .heading {
         font-size: 27px;
         
@@ -2264,7 +2334,7 @@ section #left{
     .six {
         height: 950px;
     }
-
+    
     .sections {
         display: flex;
         justify-content: center;
@@ -2297,6 +2367,9 @@ section #left{
     }
     #right,#social{
         display:none;
+    }
+    .wave{
+        bottom: 99vw;
     }
    
 
@@ -2521,6 +2594,8 @@ section #left{
     .five .heading_{
         font-size:12px;
     }
+    
+        
     .six .heading {
         font-size: 27px;
         
@@ -2719,6 +2794,9 @@ section #left{
         display:flex;
         justify-content: space-between;
         
+    }
+    .wave{
+        bottom:123vw;
     }
     #right,#social{
         display:none;
@@ -2950,6 +3028,7 @@ section #left{
     .five .heading_{
         font-size:12px;
     }
+        
     .six .heading {
         font-size: 27px;
         
@@ -3140,7 +3219,6 @@ section #left{
         bottom: 20px;
         color: #2e2250;
     }
-
     .four {
         padding: 80px 0 20px 0;
         height: 570px;
@@ -3206,10 +3284,13 @@ section #left{
         justify-content: space-between;
         
     }
+    .wave{
+        bottom: 152vw;
+    }
     #right,#social{
         display:none;
     }
-
+   
     .workVerticalLine::before {
         content: "●";
         font-size: 30px;
@@ -3227,7 +3308,6 @@ section #left{
         bottom: 20px;
         color: #2e2250;
     }
-   
     .navBtn{
         display:block;
         
@@ -3451,6 +3531,8 @@ section #left{
     .five .heading_{
         font-size:12px;
     }
+    
+        
     .six .heading {
         font-size: 27px;
         
@@ -3679,22 +3761,54 @@ section #left{
 }
  
 
+
+
+
+
+
+
+
 /* Existing CSS content with new animation styles */
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  @keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.slide-in-left {
+  opacity: 0;
+  animation: slideInLeft 1s forwards;
+}
+
+/* Hide initial opacity for observed elements */
+.observed {
+  opacity: 0;
+}
+@keyframes slideInFromRight {
     from {
       opacity: 0;
-      transform: translateX(-30px);
+      transform: translateX(100px);
     }
     to {
       opacity: 1;
@@ -3702,87 +3816,55 @@ section #left{
     }
   }
   
-  .fade-in {
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .image-slide-in {
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: slideInFromRight 1.3s ease forwards;
+  }
+  
+  .text-slide-in {
+    opacity: 0;
+    animation: slideInFromLeft 1.3s ease forwards;
+  }
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
   
   .slide-in-left {
     opacity: 0;
-    animation: slideInLeft 1s forwards;
+    animation: slideInFromLeft 1.5s ease forwards;
   }
   
-  /* Hide initial opacity for observed elements */
-  .observed {
+  .slide-in-right {
     opacity: 0;
+    animation: slideInFromRight 1.5s ease forwards;
   }
-  @keyframes slideInFromRight {
-      from {
-        opacity: 0;
-        transform: translateX(100px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
     
-    @keyframes slideInFromLeft {
-      from {
-        opacity: 0;
-        transform: translateX(-100px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    .image-slide-in {
-      opacity: 0;
-      animation: slideInFromRight 1.3s ease forwards;
-    }
-    
-    .text-slide-in {
-      opacity: 0;
-      animation: slideInFromLeft 1.3s ease forwards;
-    }
-    @keyframes slideInFromLeft {
-      from {
-        opacity: 0;
-        transform: translateX(-100px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    @keyframes slideInFromRight {
-      from {
-        opacity: 0;
-        transform: translateX(100px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    .slide-in-left {
-      opacity: 0;
-      animation: slideInFromLeft 1.5s ease forwards;
-    }
-    
-    .slide-in-right {
-      opacity: 0;
-      animation: slideInFromRight 1.5s ease forwards;
-    }
-      
-
-
-
-
-
-
-
