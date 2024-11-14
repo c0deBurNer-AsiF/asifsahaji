@@ -20,7 +20,7 @@ allTitle.forEach(item=>{
 });
 
 
-
+/*
 
 const eduTab=document.getElementById("education");
 const workTab=document.getElementById("work");
@@ -55,6 +55,83 @@ workTab.addEventListener("click",()=>{
     eduTab.classList.remove("active");
     eduSide.classList.remove("active");
 
+});*/
+
+
+
+const eduTab = document.getElementById("education");
+const workTab = document.getElementById("work");
+const eduSide = document.getElementById("eduSide");
+const workSide = document.getElementById("workSide");
+
+
+eduTab.classList.add("active");
+workTab.classList.remove("active");
+eduSide.classList.add("active");
+workSide.classList.remove("active");
+
+
+eduTab.addEventListener("click", () => {
+  
+    eduTab.classList.add("active");
+    workTab.classList.remove("active");
+
+   
+    eduSide.classList.add("active");
+    eduSide.classList.add("slideInUp");
+    workSide.classList.remove("active");
+
+
+    workSide.classList.remove("slideInRight");
+});
+
+workTab.addEventListener("click", () => {
+ 
+    workTab.classList.add("active");
+    eduTab.classList.remove("active");
+
+
+    workSide.classList.add("active");
+    workSide.classList.add("slideInRight");
+    eduSide.classList.remove("active");
+
+    eduSide.classList.remove("slideInUp");
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const educationTab = document.getElementById('education');
+    const workTab = document.getElementById('work');
+    const educationSection = document.getElementById('eduSide');
+    const workSection = document.getElementById('workSide');
+
+
+    educationSection.classList.add('education-section');
+    workSection.style.display = 'none'; 
+
+
+    educationTab.addEventListener('click', function () {
+      
+        workSection.style.display = 'none';
+       
+        educationSection.style.display = 'block';
+        educationSection.classList.add('education-section');
+       
+        workTab.classList.remove('active');
+        educationTab.classList.add('active');
+    });
+
+   
+    workTab.addEventListener('click', function () {
+       
+        educationSection.style.display = 'none';
+   
+        workSection.style.display = 'block';
+        workSection.classList.add('work-section');
+       
+        educationTab.classList.remove('active');
+        workTab.classList.add('active');
+    });
 });
 
 
@@ -152,25 +229,24 @@ document.getElementById("btn1").addEventListener("click", function(){
 
 
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    const options = { threshold: 0.1 };
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fade-in");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
-  
-    document.querySelectorAll(".observed").forEach(section => {
-      observer.observe(section);
+  const options = { threshold: 0.1 };
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in");
+        observer.unobserve(entry.target);
+      }
     });
+  }, options);
+
+  document.querySelectorAll(".observed").forEach(section => {
+    observer.observe(section);
   });
-  
-  
-  
-  
+});
+
 
 
 

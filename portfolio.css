@@ -3747,6 +3747,7 @@ section #left{
 
 
 /* Existing CSS content with new animation styles */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -3779,7 +3780,7 @@ section #left{
   animation: slideInLeft 1s forwards;
 }
 
-/* Hide initial opacity for observed elements */
+
 .observed {
   opacity: 0;
 }
@@ -3846,3 +3847,74 @@ section #left{
     animation: slideInFromRight 1.5s ease forwards;
   }
     
+  
+  /* Fade and Slide-in Animations */
+  
+  /* For smoother animations on hover */
+  button:hover, .btn1:hover, .btn2:hover {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform: translateY(-5px);
+    background-color: #ff6f00;
+  
+  }
+
+
+
+  /* Keyframes for Education and Work Sections */
+
+/* Fade-in with slide-up animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); /* Start off-screen on the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Slide to original position */
+    }
+}
+
+/* Slide-in from the right (Work Section) */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Education Section Animation */
+.education-section {
+    display: none;  /* Initially hide the section */
+    opacity: 0;  /* Ensure it's invisible */
+    animation: slideInLeft .5s ease-out forwards; /* Add the animation */
+}
+
+/* Work Section Animation */
+.work-section {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideInRight .5s ease-out forwards;
+}
+
+/* Tab Hover Effect for Switching */
+.tab:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    color: #ff6f00;
+}
+/* Keyframes for Education Section (Left to Right) */
+
+
+/* Education Section Animation */
+
+
+
+
