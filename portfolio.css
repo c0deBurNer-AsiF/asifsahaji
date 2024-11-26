@@ -345,7 +345,7 @@ section #left{
     box-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a
 }
 #about_img{
-    width:37%;
+    width:auto;
     height:350px;
     border-radius:15px;
     margin:35px;
@@ -1354,7 +1354,7 @@ section #left{
         font-weight:400;
     }
    #about_img {
-        width: 37%;
+        width: auto;
         height: 320px;
    }
     #abt_btn1, #abt_btn2{
@@ -1441,7 +1441,7 @@ section #left{
         margin-top:20px;
     }  
    #about_img {
-        width: 37%;
+        width: auto;
         height: 300px;
    }
 
@@ -1504,7 +1504,7 @@ section #left{
         margin-top:20px;
     }  
    #about_img {
-        width: 37%;
+        width: auto;
         height: 250px;
    }
 
@@ -3913,8 +3913,29 @@ section #left{
 /* Keyframes for Education Section (Left to Right) */
 
 
-/* Education Section Animation */
+/* Animation for sliding from left to right */
+/*
 
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%); 
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
 
-
-
+  .forMargin2 {
+    opacity: 0; 
+    transform: translateX(-100%); 
+    transition: all .7s ease-out; 
+  }
+  
+  .forMargin2.active {
+    opacity: 1;
+    animation: slideInLeft .7s ease-out forwards;
+  }
+*/
