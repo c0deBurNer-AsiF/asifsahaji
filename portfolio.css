@@ -15,6 +15,30 @@ html{
 :root{
     color-scheme: light;
 }
+#logo_for_nav img{
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+}
+#logo_and_text{
+    display:flex;
+    gap:10px;
+    cursor:pointer;
+}
+nav #logo_and_text #left{
+    display:flex;
+    align-items: center;
+}
+nav #left {
+    font-size: x-large;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: #2e2250;
+}
 #noOne img {
     max-width: 100%;
     height: auto;
@@ -37,8 +61,11 @@ header{
     
 }
 #left #nav_box{
-    font-size:10px;
+    font-size:15px;
+    position: relative;
+    top: 8px;
 }
+
 
 nav{
     display:flex;
@@ -68,6 +95,7 @@ nav{
 
 
 nav div{
+    
     font-size: x-large;
     font-family: "Ubuntu", sans-serif;
     font-size:32px;
@@ -1291,6 +1319,16 @@ section #left{
     background-color:rgba(43,35,83,255);
     padding:10px 0;
 }
+.firstColumn{
+    display:flex;
+    gap:20px;
+    
+}
+#logo_at_btm img{
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+}
 .seven .forMargin7{
     display:flex;
     justify-content: space-evenly;
@@ -1581,6 +1619,33 @@ section #left{
 
 @media screen and (min-width:750px) and (max-width:900px) {
 
+    #logo_for_nav img{
+        height:60px;
+        width:60px;
+        border-radius: 50%;
+        object-fit: cover;
+        justify-content: center;
+        display: flex;
+    }
+    
+    #left #nav_box {
+        font-size: 12px;
+        position: relative;
+        top: 9px;
+    }
+    nav div {
+        font-size: x-large;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        color: #2e2250;
+    }
+    nav ul li {
+        list-style: none;
+        margin: 0px 5px;
+        font-size: large;
+    }
+
     .aboutImg1{
         top:10px;
         left:15px;
@@ -1658,6 +1723,28 @@ section #left{
         justify-content: space-between;
         
     }
+    #logo_for_nav img{
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        object-fit: cover;
+        justify-content: center;
+        display: flex;
+    }
+    nav #left {
+        font-size: x-large;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 36px;
+        font-weight: 900;
+        color: #2e2250;
+    }
+    
+    #left #nav_box {
+        font-size: 12px;
+        position: relative;
+        top: 8px;
+    }
+    
     .wave{
         position: absolute;
         top: -445px;
@@ -2108,6 +2195,10 @@ section #left{
     .seven .forMargin7 {
         flex-direction: column;
     }
+    .firstColumn{
+        
+        margin-top:20px;
+    }
     .secondColumn {
         display: flex;
         gap: 68px;
@@ -2126,6 +2217,27 @@ section #left{
         display:flex;
         justify-content: space-between;
         
+    }
+    #logo_for_nav img{
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        object-fit: cover;
+        justify-content: center;
+        display: flex;
+    }
+    nav #left {
+        font-size: x-large;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 36px;
+        font-weight: 900;
+        color: #2e2250;
+    }
+    
+    #left #nav_box {
+        font-size: 12px;
+        position: relative;
+        top: 8px;
     }
     #right,#social{
         display:none;
@@ -2641,6 +2753,10 @@ section #left{
     .seven .forMargin7 {
         flex-direction: column;
     }
+    .firstColumn{
+        
+        margin-top:20px;
+    }
     .secondColumn {
         display: flex;
         gap: 68px;
@@ -2659,6 +2775,27 @@ section #left{
         display:flex;
         justify-content: space-between;
         
+    }
+    #logo_for_nav img{
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        object-fit: cover;
+        justify-content: center;
+        display: flex;
+    }
+    nav #left {
+        font-size: x-large;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 36px;
+        font-weight: 900;
+        color: #2e2250;
+    }
+    
+    #left #nav_box {
+        font-size: 12px;
+        position: relative;
+        top: 8px;
     }
     #right,#social{
         display:none;
@@ -3125,6 +3262,10 @@ section #left{
     .seven .forMargin7 {
         flex-direction: column;
     }
+    .firstColumn{
+        
+        margin-top:20px;
+    }
     .secondColumn {
         display: flex;
         gap: 68px;
@@ -3142,6 +3283,27 @@ section #left{
         display:flex;
         justify-content: space-between;
         
+    }
+    #logo_for_nav img{
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        object-fit: cover;
+        justify-content: center;
+        display: flex;
+    }
+    nav #left {
+        font-size: x-large;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 36px;
+        font-weight: 900;
+        color: #2e2250;
+    }
+    
+    #left #nav_box {
+        font-size: 12px;
+        position: relative;
+        top: 8px;
     }
     #right,#social{
         display:none;
@@ -3675,6 +3837,10 @@ section #left{
     .seven .forMargin7 {
         flex-direction: column;
     }
+    .firstColumn{
+        
+        margin-top:20px;
+    }
     .secondColumn {
         display: flex;
         gap: 68px;
@@ -3714,6 +3880,27 @@ section #left{
         display:flex;
         justify-content: space-between;
         
+    }
+    #logo_for_nav img{
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        object-fit: cover;
+        justify-content: center;
+        display: flex;
+    }
+    nav #left {
+        font-size: x-large;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 36px;
+        font-weight: 900;
+        color: #2e2250;
+    }
+    
+    #left #nav_box {
+        font-size: 12px;
+        position: relative;
+        top: 8px;
     }
     #right,#social{
         display:none;
@@ -4212,6 +4399,10 @@ section #left{
     }
     .rightForSix {
         width: 100%;
+    }
+    .firstColumn{
+        
+        margin-top:20px;
     }
     .seven .forMargin7 {
         flex-direction: column;

@@ -249,18 +249,68 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const options = { threshold: 0.1 }; 
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target); 
+        }
+      });
+    }, options);
+  
+  
+    document.querySelectorAll(".forMargin2").forEach(section => {
+      observer.observe(section);
+    });
+  });
+
+
+const logoAndText = document.getElementById('logo_and_text');
+logoAndText.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+});
+  
+
+
+const homeButton = document.getElementById('home_btn_top');
+homeButton.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 
 
+const homeLink = document.querySelector('#mobileNavList li:first-child a');
+homeLink.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+});
+
+  
 
 
+const homeLinkSecondColumn = document.querySelector('.secondColumn ul li:first-child a');
+homeLinkSecondColumn.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+});
 
 
-
-
-
-
-
-
+  
 
 
