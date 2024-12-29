@@ -27,6 +27,7 @@ html{
     display:flex;
     gap:10px;
     cursor:pointer;
+    padding: .8rem;
 }
 nav #logo_and_text #left{
     display:flex;
