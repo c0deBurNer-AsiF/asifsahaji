@@ -958,7 +958,7 @@ section #left{
     display: flex;
     flex-direction: column;
     
-    align-items: center;
+    align-items: flex-start;
     width: 180px;
     position: relative;
     left: 58%;
@@ -973,12 +973,12 @@ section #left{
 #workClgName{
     font-family:"poppins";
     position:relative;
-    right:63px;
+   
 }
 #workYear{
     font-family:"poppins";
     position:relative;
-    right:74px;
+   
 }
 .tab:hover{
     color:#f97008;
@@ -2169,10 +2169,10 @@ section #left{
         font-size: 14px;
     }
     #workClgName {
-        right: 53px;
+        right: 1px;
     }
     #workYear {
-        right: 63px;
+        right: 1px;
     }
 
     .workVerticalLine {
@@ -2724,14 +2724,14 @@ section #left{
         font-size: 14px;
     }
     #workClgName {
-        right: 22px;
+        right: 1px; 
     }
     #workYear {
-        right: 32px;
+        right: 16px;
     }
 
     .workVerticalLine {
-        bottom: 102px;
+        bottom: 81px;
     }
 
     .five {
@@ -3203,7 +3203,7 @@ section #left{
         font-size: 14px;
     }
     .nameClg, .year {
-        font-size: 12px;
+        font-size: 10px;
     }
     .vertical-line {
         height: 260px;
@@ -3233,14 +3233,14 @@ section #left{
         font-size: 14px;
     }
     #workClgName {
-        right: 18px;
+        right: 9px;
     }
     #workYear {
-        right: 31px;
+        right: 21px;
     }
 
     .workVerticalLine {
-        bottom: 102px;
+        bottom: 75px;
     }
 
     .five {
@@ -3786,7 +3786,7 @@ section #left{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90px;
+        width: 105px;
         position: relative;
         left: 58%;
         bottom: 6px;
@@ -3796,14 +3796,14 @@ section #left{
         font-size: 16px;
     }
     #workClgName {
-        right: 19px;
+        right: 5px;
     }
     #workYear {
-        right: 30px;
+        right: 21px;
     }
 
     .workVerticalLine {
-        bottom: 109px;
+        bottom: 85px;
     }
     .workVerticalLine::before {
         content: "●";
@@ -4360,7 +4360,7 @@ section #left{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90px;
+        width: 100px;
         position: relative;
         left: 58%;
         bottom: 6px;
@@ -4370,14 +4370,14 @@ section #left{
         font-size: 16px;
     }
     #workClgName {
-        right: 20px;
+        right: 3px;
     }
     #workYear {
-        right: 30px;
+        right: 18px;
     }
 
     .workVerticalLine {
-        bottom: 109px;
+        bottom: 85px;
     }
     .four {
         padding: 80px 0 20px 0;
